@@ -1,0 +1,12 @@
+function variableName(name) {
+    
+    //confirms that the first value is a letter or an underscore
+    if(/^[A-Za-z__]/.test(name)){
+        //checks if there is a value that isn't an alphanumeric character or an underscore
+        if(/^[A-Za-z0-9_]*$/ig.test(name)){
+           return true;
+       }
+        return false;
+    }
+    return false;
+}
